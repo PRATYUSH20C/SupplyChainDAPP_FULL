@@ -42,28 +42,6 @@ If you want to simply download the file to be used in the browser you can find t
 Check out [node-qrious](https://github.com/neocotic/node-qrious) if you want to install it for use within
 [Node.js](https://nodejs.org).
 
-## Examples
-
-``` html
-<!DOCTYPE html>
-<html>
-  <body>
-    <canvas id="qr"></canvas>
-
-    <script src="/path/to/qrious.js"></script>
-    <script>
-      (function() {
-        var qr = new QRious({
-          element: document.getElementById('qr'),
-          value: 'https://github.com/neocotic/qrious'
-        });
-      })();
-    </script>
-  </body>
-</html>
-```
-
-Open up `demo.html` in your browser to play around a bit.
 
 ## API
 
@@ -171,31 +149,3 @@ qr.toDataURL();
 qr.toDataURL('image/jpeg');
 //=> "data:image/jpeg;base64,/9j/...xqAqIqgKFAAAAAq3RRQAUUUUAf/Z"
 ```
-
-## Migrating from older versions
-
-If you've been using an older major version and would like details on what's changed and information on how to migrate
-to the latest major release below:
-
-https://github.com/neocotic/qrious/wiki/Migrating-from-older-versions
-
-## Bugs
-
-If you have any problems with QRious or would like to see changes currently in development you can do so
-[here](https://github.com/neocotic/nqrious/issues). Core features and issues are maintained separately
-[here](https://github.com/neocotic/qrious-core/issues).
-
-## Contributors
-
-If you want to contribute, you're a legend! Information on how you can do so can be found in
-[CONTRIBUTING.md](https://github.com/neocotic/qrious/blob/master/CONTRIBUTING.md). We want your suggestions and pull
-requests!
-
-A list of QRious contributors can be found in [AUTHORS.md](https://github.com/neocotic/qrious/blob/master/AUTHORS.md).
-
-## License
-
-Copyright © 2017 Alasdair Mercer  
-Copyright © 2010 Tom Zerucha
-
-See [LICENSE.md](https://github.com/neocotic/qrious/blob/master/LICENSE.md) for more information on our GPLv3 license.
