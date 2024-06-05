@@ -33,6 +33,7 @@ var BrowserElementService = ElementService.extend({
   /**
    * @override
    */
+  
   createCanvas: function() {
     return document.createElement('canvas');
   },
